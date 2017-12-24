@@ -1,0 +1,24 @@
+{
+  "name": "GF.StockNotifier.Web",
+  "homepage": "https://github.com/surrealist/StockNotifier",
+  "authors": [
+    "Suthep Sangvirotjanaphat <suthep@gfbd.co.th>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "wwwroot/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-validation-unobtrusive": "3.2.6",
+    "bootstrap": "v3.3.7",
+    "jquery": "*",
+    "jquery-validation": "*"
+  }
+}

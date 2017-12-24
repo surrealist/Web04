@@ -1,0 +1,11 @@
+﻿@* PlaylistList/Default.cshtml *@
+
+@model IEnumerable<Playlist>
+
+<div class="well well-sm">
+  Playlist: @Model.Count()
+</div>
+
+@foreach(var pl in Model ) {
+  <vc:playlist playlist="@pl"/>
+}

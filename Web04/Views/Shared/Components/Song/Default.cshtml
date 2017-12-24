@@ -1,0 +1,11 @@
+﻿@model Song
+
+<div>
+  <span class="text-muted pull-right">
+    @Model.Length.ToString("mm':'ss")
+  </span>
+  <div class="text-primary" 
+       style="text-overflow: ellipsis;">
+    @Model.Title
+  </div>
+</div>

@@ -1,0 +1,5 @@
+﻿@model IEnumerable<Song>
+
+@foreach (var song in Model) {
+  <vc:song song="@song"/>
+}

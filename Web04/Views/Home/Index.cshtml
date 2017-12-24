@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Album>
+
+<h2>Albums</h2>
+@foreach (var a in Model) {
+  <h4>@a.Title</h4>
+  <img src="~/images/@a.CoverImageUrl" 
+       width="200" class="img-rounded"/>
+}

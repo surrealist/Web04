@@ -1,0 +1,18 @@
+﻿@model Album
+
+<div class="panel panel-default">
+  <div class="panel-body">
+
+    <div class="row">
+      <div class="col-xs-4">
+        <img src="~/images/@Model.CoverImageUrl"
+             class="img-responsive img-rounded pull-left" />
+      </div>
+      <div class="col-xs-8">
+        <h3 style="margin-top: 0px;">@Model.Title</h3>
+        <vc:song-list album-id="@Model.Id"/>
+      </div>
+    </div>
+  </div>
+</div>
+

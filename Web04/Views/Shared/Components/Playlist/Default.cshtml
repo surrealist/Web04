@@ -11,9 +11,9 @@
       <div class="col-xs-8">
         <h3 style="margin-top: 0px;">@Model.Name</h3>
         @foreach (var item in Model.Items) {
-          if (item is Song s) {
+          if (item.MusicItem is Song s) {
             @Html.DisplayFor(x => s)
-          } else if (item is Album a) {
+          } else if (item.MusicItem is Album a) {
             @Html.DisplayFor(x => a)
           }
         }

@@ -12,9 +12,10 @@ using Web04.Data;
 namespace Web04.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20171224071314_MusicItemsBelongToManyPlaylist")]
+    partial class MusicItemsBelongToManyPlaylist
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -194,7 +195,7 @@ namespace Web04.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("MusicItems");
+                    b.ToTable("MusicItem");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("MusicItem");
                 });

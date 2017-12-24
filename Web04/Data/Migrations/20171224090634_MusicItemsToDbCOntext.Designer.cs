@@ -12,9 +12,10 @@ using Web04.Data;
 namespace Web04.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20171224090634_MusicItemsToDbCOntext")]
+    partial class MusicItemsToDbCOntext
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

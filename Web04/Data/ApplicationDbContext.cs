@@ -13,6 +13,7 @@ namespace Web04.Data {
         : base(options) {
     }
 
+    public DbSet<MusicItem> MusicItems { get; set; }
     public DbSet<Album> Albums { get; set; }
     public DbSet<Song> Songs { get; set; }
 

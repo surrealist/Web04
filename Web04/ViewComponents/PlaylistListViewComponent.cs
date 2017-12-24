@@ -16,7 +16,7 @@ namespace Web04.ViewComponents {
     public PlaylistListViewComponent(ApplicationDbContext db,
         UserManager<ApplicationUser> userManager) {
       this.db = db;
-      this.userManager = userManager;       
+      this.userManager = userManager;
     }
 
     public async Task<IViewComponentResult> InvokeAsync() {
@@ -27,8 +27,11 @@ namespace Web04.ViewComponents {
               select p;
 
       var items = await q.ToListAsync();
-      foreach(var item in items) {
-        db.Entry(item).Collection(x => x.Items).Load();
+      foreach (var item in items) {
+        await db.Entry(item).Collection(x => x.Items).LoadAsync();
+        foreach (var musicItem in item.Items) {
+          await db.Entry(musicItem).Reference(x => x.MusicItem).LoadAsync();
+        }
       }
       return View(await q.ToListAsync());
     }

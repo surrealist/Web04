@@ -1,6 +1,6 @@
 {
-  "name": "GF.StockNotifier.Web",
-  "homepage": "https://github.com/surrealist/StockNotifier",
+  "name": "Web04 for BLA",
+  "homepage": "https://github.com/surrealist/Web04",
   "authors": [
     "Suthep Sangvirotjanaphat <suthep@gfbd.co.th>"
   ],
@@ -17,8 +17,8 @@
   ],
   "dependencies": {
     "jquery-validation-unobtrusive": "3.2.6",
-    "bootstrap": "v3.3.7",
-    "jquery": "*",
-    "jquery-validation": "*"
+    "bootstrap": "3.3.7",
+    "jquery": "3.2.1",
+    "jquery-validation": "1.17.0"
   }
 }
